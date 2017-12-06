@@ -30,7 +30,7 @@ public class Utilities {
 		}
 		Random randomGenerator = new Random();
 		
-		int index = randomGenerator.nextInt(arr.size());//pick a random order of the word
+		int index = randomGenerator.nextInt(arr.size());//pick a random index of the word
 		word = arr.get(index); //read a word from array of words
 	}
 	
@@ -39,10 +39,10 @@ public class Utilities {
 		String newasterisk ="";
 		for(int i=0; i<word.length(); i++) {
 			if(word.charAt(i)== guess.charAt(0)) {
-				newasterisk += word.charAt(i);
+				newasterisk += guess.charAt(i);
 			}
 			else if(asterisk.charAt(i) != '*') {
-				newasterisk += word.charAt(i);
+				newasterisk += asterisk.charAt(i);
 			}
 			else {
 				newasterisk += "*";
