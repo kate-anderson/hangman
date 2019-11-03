@@ -150,5 +150,33 @@ public class Utilities {
 		}
 
 	}
+	public static void hangman(String[] args) {
+		StdDraw.setXscale(-0.5, +2.5);
+	StdDraw.setYscale(-0.5, +2.5);
+	StdDraw.setPenRadius(0.005);
+	
+	StdDraw.line(-0.3, -0.3, 0.2, -0.3);
+	StdDraw.line(-0.05, -0.3, -0.05, 1.45);
+	StdDraw.line(-0.05, 1.45, 0.65, 1.45);
+	StdDraw.line(0.65, 1.45, 0.65,1.35);
+// draw a hangman
+	StdDraw.circle(0.65, 1.2875, 0.0625);
+	StdDraw.line(0.65, 1.225, 0.65, 1.1);
+	StdDraw.line(0.65, 1.1, 0.30, 0.85);
+	StdDraw.line(0.65, 1.1, 1.0, 0.85);
+	StdDraw.line(0.65, 1.1, 0.65, 0.65);
+	StdDraw.line(0.65, 0.65, 0.35, 0.125);
+	StdDraw.line(0.65, 0.65, 1.0, 0.125);
+	// draw a line to fill out the letters: for example vacation
+	StdDraw.line(-0.3, 2.0, 0.0, 2.0);
+	StdDraw.line(0.2, 2.0, 0.5, 2.0);
+	StdDraw.line(0.7, 2.0, 1.0, 2.0);
+	StdDraw.line(1.2, 2.0, 1.5, 2.0);
+	StdDraw.line(1.7, 2.0, 2.0, 2.0);
+	StdDraw.line(0.2, 1.55, 0.5, 1.55);
+	StdDraw.line(0.7, 1.55, 1.0, 1.55);
+	StdDraw.line(1.2, 1.55, 1.5, 1.55);
+	}
+
 
 }
